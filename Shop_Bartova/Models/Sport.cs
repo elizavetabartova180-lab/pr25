@@ -9,7 +9,7 @@ namespace Shop_Bartova.Models
     public class Sport: Shop
     {
         public string Size { get; set; }
-        public Sport(string name, int price, string size) : base(name, price)
+        public Sport(string name, int price, string size) : base(0, name, price)
         {
             this.Size = size;
         }

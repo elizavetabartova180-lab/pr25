@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Shop_Bartova.Classes;
 
 namespace Shop_Bartova
 {
@@ -20,7 +21,7 @@ namespace Shop_Bartova
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<object> AllItems = Classes.ShopContext.AllItems();
+        List<object> AllItems = new ChildrenContext().All();
         public MainWindow()
         {
             InitializeComponent();
