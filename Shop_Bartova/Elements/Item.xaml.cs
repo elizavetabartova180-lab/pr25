@@ -12,16 +12,16 @@ namespace Shop_Bartova.Elements
         public Item(object item)
         {
             InitializeComponent();
-            Shop ShopData = item as Shop;
+            Models.Shop ShopData = item as Models.Shop;
             td_Name.Content = ShopData.Name;
             td_Price.Content = "Цена:" + ShopData.Price;
-            if (item is Children)
+            if (item is Models.Children)
             {
-                Children ChildrenData = item as Children;
+                Models.Children ChildrenData = item as Models.Children;
                 td_Characteristic.Content = "Возраст:" + ChildrenData.Age;
             }
-            if (item is Sport) { 
-                Sport SportData = item as Sport;
+            if (item is Models.Sport) {
+                Models.Sport SportData = item as Models.Sport;
                 td_Characteristic.Content = "Размер:" + SportData.Size;
 
             }
