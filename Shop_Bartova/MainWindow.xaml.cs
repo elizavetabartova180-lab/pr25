@@ -35,6 +35,7 @@ namespace Shop_Bartova
                 parent.Children.Add(new Elements.Item(Item));
             }
             
+
         }
     }
 }
